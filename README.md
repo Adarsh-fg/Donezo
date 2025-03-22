@@ -1,4 +1,3 @@
-```md
 # 📝 Flask To-Do List App
 
 A **feature-rich** To-Do List application built using Flask, with user authentication, task sorting, priority levels, analytics, and more.
