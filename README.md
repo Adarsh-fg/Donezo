@@ -51,7 +51,8 @@ A **feature-rich** To-Do List application built using Flask, with user authentic
 6. Open `http://127.0.0.1:5000/` in your browser.
 
 ## 📸 Screenshots
-(Add screenshots here)
+![Screenshot 2025-03-22 101928](https://github.com/user-attachments/assets/656745f6-04e2-49a4-87bc-a9702ce0b7a1)
+
 
 ## 📌 API Routes
 | Route           | Method | Description              |
