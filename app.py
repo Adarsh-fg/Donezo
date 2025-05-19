@@ -35,8 +35,8 @@ class Task(db.Model):
     title = db.Column(db.String(200), nullable=False)
     completed = db.Column(db.Boolean, default=False)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
-    due_date = db.Column(db.DateTime, nullable=True)  # 👈 New column
-    priority = db.Column(db.String(10), nullable=False, default="Medium")  # 👈 New column
+    due_date = db.Column(db.DateTime, nullable=True) 
+    priority = db.Column(db.String(10), nullable=False, default="Medium") 
 
 @login_manager.user_loader
 def load_user(user_id):
@@ -161,7 +161,7 @@ def reorder_tasks():
     for index, task_id in enumerate(data["order"]):
         task = Task.query.get(task_id)
         if task and task.user_id == current_user.id:
-            task.order = index  # Assuming you added an 'order' column to Task model
+            task.order = index
     db.session.commit()
     return jsonify({"message": "Task order updated"})
 
